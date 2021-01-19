@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <title>Document</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Favorite Things</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Favorite Things</h1>
+    <h3>Here's a fun game! Type your favorite things in the form below:</h3>
+
+    <form id="formOne">
+      <div class="form-group">
+        
+        <label for="favFood">Favorite Food</label>
+        <input type="text" class="form-control" id="favFood" placeholder="What's your favorite food?">
+      </div>
+
+      <div class="form-group">
+        <label for="favColor">Favorite Color</label>
+        <input type="text" class="form-control" id="favColor" placeholder="What's your favorite color?">
+      </div>
+
+      <div class="form-group">
+        <label for="favMusic">Favorite Music Genre</label>
+        <input type="text" class="form-control" id="favMusic" placeholder="What's your favorite music genre?">
+      </div>
+
+      <div class="form-group">
+        <label for="favVacation">Favorite Vacation Destination</label>
+        <input type="text" class="form-control" id="favVacation" placeholder="What's your favorite vacation destination?">
+      </div>
+
+      <button type="submit" class="btn">Submit!</button>
+    </form>
+    <div id="results">
+    <p>These are my most favorite things:</p>
+    <ul id="mostFavsList">
+    </ul>
+  </div>
+  </div>
 </body>
 </html>
